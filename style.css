@@ -1,0 +1,123 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* App Title */
+h1 {
+  margin: 20px;
+  font-size: 2rem;
+  color: black; /* App name in black */
+}
+
+/* Welcome Section */
+#home-view h5 {
+  margin: 0 20px 10px;
+  color: grey; /* Welcome text in grey */
+}
+
+/* Create Note Button (floating + icon) */
+#new {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 10px 20px;
+}
+
+#new:hover {
+  background: #0056b3;
+}
+
+/* Notes Area */
+#notesArea {
+  margin: 20px; /* Margin around notes */
+}
+
+#notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+/* Individual Note */
+.note {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.note-title {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.note-content {
+  font-size: 0.9rem;
+}
+
+/* Create Note View */
+#create-note-view {
+  padding: 20px;
+}
+
+#create-note-view input,
+#create-note-view textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#note-color {
+  margin-bottom: 15px;
+}
+
+/* View Note (Fullscreen) */
+#view-note-view {
+  padding: 20px;
+}
+
+#fullscreen-note-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+nav button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+nav button:hover {
+  color: #007bff;
+}
+
+/* Go Back Button */
+.go-back {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
