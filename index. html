@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <title>Notes App</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  
+  <!-- Home View -->
+  <div id="home-view">
+    <!-- App title -->
+    <div>
+      <h1 style="font-family: sans-serif;">Notes</h1>
+    </div>
+
+    <!-- Welcome message -->
+    <div>
+      <h5>Welcome</h5>
+      <!-- Strictly icon button for creating notes -->
+      <button id="new"><i class="fa fa-plus"></i></button>
+    </div>
+
+    <!-- Notes list container -->
+    <div id="notesArea">
+      <div id="notes-list">
+        <!-- Each note will follow this format -->
+        <div class="note">
+          <!-- Note title -->
+          <h5 class="note-title">Note Name</h5>
+          <!-- Note content -->
+          <div class="note-content">
+            Nothing here yet
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Home View -->
+
+
+  <!-- Create Note View -->
+  <div id="create-note-view" style="display: none;">
+    <!-- Go back button -->
+    <button class="go-back">&larr; Back</button>
+
+    <h2>Create a Note</h2>
+
+    <!-- Input for note title -->
+    <input type="text" id="note-title-input" placeholder="Enter note name">
+
+    <!-- Input/textarea for note content -->
+    <textarea id="note-content-input" placeholder="Enter note content"></textarea>
+
+    <!-- Color picker for note background -->
+    <input type="color" id="note-color" value="#ffffff">
+  </div>
+  <!-- End of Create Note View -->
+
+
+  <!-- View Note (Fullscreen) -->
+  <div id="view-note-view" style="display: none;">
+    <!-- Go back button -->
+    <button class="go-back">&larr; Back</button>
+
+    <!-- Fullscreen note title -->
+    <h2 id="fullscreen-note-title">Note Title</h2>
+
+    <!-- Navbar with edit, background color, and delete -->
+    <nav>
+      <button id="edit-note"><i class="fa fa-pen"></i></button>
+      <button id="change-bgcolor"><i class="fa fa-palette"></i></button>
+      <button id="delete-note"><i class="fa fa-trash"></i></button>
+    </nav>
+
+    <!-- Fullscreen note content -->
+    <div id="fullscreen-note-content">
+      Nothing here yet
+    </div>
+  </div>
+  <!-- End of View Note View -->
+
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
